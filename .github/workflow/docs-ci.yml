@@ -1,27 +1,7 @@
 name: Docs CI
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+on: [push, pull_request]
 
 jobs:
   docs:
-    runs-on: ubuntu-latest
+    uses: hellopaywaz/.github/.github/workflows/docs-ci.yml@main
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-
-      - name: Install deps
-        run: npm ci
-
-      - name: Build docs
-        run: npm run build
