@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Paywaz Docs</title>
+    <style>
+      body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; margin: 0; }
+      header { padding: 24px; border-bottom: 1px solid #eee; }
+      .wrap { max-width: 1050px; margin: 0 auto; padding: 0 16px; }
+      h1 { margin: 0 0 8px; font-size: 28px; }
+      p { margin: 0; color: #444; }
+      .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin: 18px 0 8px; }
+      .card { border: 1px solid #eee; border-radius: 14px; padding: 14px; background: #fff; }
+      .card h2 { margin: 0 0 6px; font-size: 16px; }
+      .card a { color: #0b57d0; text-decoration: none; }
+      .card a:hover { text-decoration: underline; }
+      .muted { color: #666; font-size: 13px; line-height: 1.35; }
+      .divider { height: 1px; background: #eee; margin: 16px 0; }
+      .footer { padding: 18px 0 28px; color: #666; font-size: 12px; }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="wrap">
+        <h1>Paywaz Documentation Hub</h1>
+        <p>Single landing hub for: <strong>API → SDK → Samples</strong></p>
+
+        <div class="grid">
+          <div class="card">
+            <h2>1) API (OpenAPI)</h2>
+            <div class="muted">Reference for endpoints, schemas, errors, and versioning.</div>
+            <div style="margin-top:10px">
+              <a href="#api">View embedded API docs ↓</a><br/>
+              <a href="https://github.com/hellopaywaz/paywaz-public-api">OpenAPI repo</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2>2) SDK (JavaScript)</h2>
+            <div class="muted">Typed client + webhook helpers. Package: <code>@paywaz/sdk</code></div>
+            <div style="margin-top:10px">
+              <a href="https://hellopaywaz.github.io/paywaz-sdk-js/">SDK TypeDoc (GitHub Pages)</a><br/>
+              <a href="https://github.com/hellopaywaz/paywaz-sdk-js">SDK repo</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2>3) Samples</h2>
+            <div class="muted">Runnable examples (Node 20). Includes payments + webhooks.</div>
+            <div style="margin-top:10px">
+              <a href="https://github.com/hellopaywaz/paywaz-samples">Samples repo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+        <p class="muted">
+          Below: embedded OpenAPI docs (Redoc). If the spec path changes, update <code>SPEC_URL</code> in this file.
+        </p>
+      </div>
+    </header>
+
+    <div class="wrap" id="api" style="padding: 10px 16px 30px;">
+      <div id="redoc-container"></div>
+    </div>
+
+    <script>
+      // IMPORTANT: adjust if your OpenAPI file lives somewhere else.
+      // Based on your earlier CI logs: openapi/openapi.yaml
+      const SPEC_URL = "https://raw.githubusercontent.com/hellopaywaz/paywaz-public-api/main/openapi/openapi.yaml";
+      window.__PAYWAZ_SPEC_URL__ = SPEC_URL;
+    </script>
+    <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"></script>
+    <script>
+      Redoc.init(window.__PAYWAZ_SPEC_URL__, { scrollYOffset: 0 }, document.getElementById("redoc-container"));
+    </script>
+
+    <div class="wrap footer">
+      Paywaz.com LLC — Zero-Fee Crypto-Native Payments.
+    </div>
+  </body>
+</html>
